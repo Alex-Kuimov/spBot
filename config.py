@@ -1,2 +1,2 @@
-BOT_TOKEN = "332449020:AAFBOEVcxP_Q1ua_sqI7_ctz_hxarJGHmZ0"  # Your token
+BOT_TOKEN = "1421510404:AAEVphUK27m0Zey1NPrxEgE91nNw6_ThB_4"  # Your token
 admin_id = 85085228
