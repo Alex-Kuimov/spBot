@@ -4,10 +4,12 @@ from keyboards.default import menu
 from loader import dp, bot
 from bs4 import BeautifulSoup
 import requests as req
+from config import admin_id
 
 @dp.message_handler(Command("start"))
 async def show_menu(message: Message):
     await message.answer("Привет! Я гид Геленджика, выбери то что тебя интересует", reply_markup=menu)
+    await bot.send_message(chat_id=admin_id, text="Бота запустили")
 
 
 @dp.message_handler(Text(equals=["Погода", "Web камеры", "Еда", "Куда сходить?"]))
